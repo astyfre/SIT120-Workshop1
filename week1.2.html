@@ -3,7 +3,18 @@
     <head>
         <title>My Cool Website</title>
 
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css"> <!-- call to external styles-->
+
+        <style>
+            h1{
+                color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            table, th, td {
+            border:1px solid black;
+            } 
+            </style>
+            <!-- internal styles-->
 
     </head>
 
@@ -12,13 +23,48 @@
             <ul id="navbar">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="week1.html">Contact</a></li>
             </ul>
         </nav>
+        <img src="logo.jpg" alt="Test Logo"  
+        style= "position: absolute; 
+        top: 17px; 
+        left: 10px;
+        width: 55px;
+        height: 55px;">
 
         <section id="main-content">
             <h1>Welcome To My Cool Website</h1>
-            <p> This is a simple website designed to demonstrate HTML and CSS.</p>
+            <p style="color: rgb(0, 255, 21);" > This is a simple website designed to demonstrate HTML and CSS.</p> <!-- inline styling-->
+            <form>
+                <label for="fname">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <p> Choose your favourite Web Language: </p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css"  value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <h2> Basic Table Demonstrate</h2>
+            <table style="width:100%">
+                <tr>
+                  <th>This</th>
+                  <th>Is</th>
+                </tr>
+                <tr>
+                  <td>To</td>
+                  <td> Demonstrate</td>
+                </tr>
+                <tr>
+                  <td> A Table </td>
+                  <td> in HTML</td>
+                </tr>
+              </table>
         </section>
 
         <footer>
